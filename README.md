@@ -14,6 +14,26 @@ OpenDrone VTOL is an open-source platform for building interoperable drone-based
 - Backend API (FastAPI)
 - Ground Control (React)
 - Federation Layer (multi-node drone networks)
+- 
+  ## Core components
+- **Flight layer**: PX4 / ArduPilot-compatible configuration
+- **Companion computing**: Raspberry Pi / Jetson class devices
+- **Backend API**: FastAPI
+- **Ground control UI**: React dashboard
+- **AI module**: vision + routing
+- **Hardware layer**: modular frame, payload bay, and BOM
+
+ ## Repository structure
+```text
+backend/            FastAPI backend
+frontend/           React dashboard
+ai-module/          Vision and routing services
+simulator/          Telemetry simulator
+hardware/           CAD, STL, wiring, BOM
+firmware/           Flight-controller config
+docs/               Architecture, use cases, federation
+elementor/          Landing page scaffold
+.github/workflows/  CI automation
 
 ## 🌍 Why it matters
 Current drone ecosystems are closed and vendor-locked.
